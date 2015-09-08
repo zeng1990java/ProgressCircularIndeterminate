@@ -9,12 +9,6 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-/**
- * $desc
- *
- * @author zxb
- * @date 15/8/26 下午11:07
- */
 public class ProgressCircularIndeterminate extends View {
 
     private static final int DEFAULT_RADIUS = 15;
