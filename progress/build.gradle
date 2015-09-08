@@ -21,7 +21,16 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.0.1'
 }
 
+ext {
+    PUBLISH_GROUP_ID = 'com.zxb.progress'  // 填写groupId， 一般是包名，比如：com.android.support
+    LIB_NAME = 'progress'    // lib名称，比如：appcompat-v7
+    PUBLISH_VERSION = '0.1.0'   // 版本号，比如：22.2.1
+    WEBSITE_URL = 'https://github.com/zeng1990java/ProgressCircularIndeterminate'  // 可以填写github上的库地址.
+    ISSUE_TRACKER_URL = 'https://github.com/zeng1990java/ProgressCircularIndeterminate/issues' // 可以填写github库的issue地址.
+    VSC_URL = 'https://github.com/zeng1990java/ProgressCircularIndeterminate'    // 可以填写github上库的地址.
+}
 
+// 下面这行请勿修改
+apply from: 'https://raw.githubusercontent.com/andforce/release-android-lib-to-jcenter/master/bintray.gradle'
